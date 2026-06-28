@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Plataforma educacional dedicada ao estudo da Psicologia, Neurociência e Comportamento Humano."/>
+<meta name="keywords" content="psicologia,neurociência,comportamento humano,emoções,memória,aprendizagem"/>
+<meta name="author" content="Mel Louise"/>
+<meta name="theme-color" content="#1a1206"/>
+<meta property="og:title" content="MundBehavior Institute"/>
+<meta property="og:description" content="Explorando a mente humana, compreendendo comportamentos, transformando perspectivas."/>
+<title>MundBehavior Institute | Explorando a Mente Humana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════ NAVBAR ═══════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Mund<span>Behavior</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#psicologia">Psicologia</a></li>
+      <li><a href="#comportamento">Comportamento</a></li>
+      <li><a href="#neurociencia">Neurociência</a></li>
+      <li><a href="#emocoes">Emoções</a></li>
+      <li><a href="#teste">Teste</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+    </ul>
+    <a href="#contato" class="nav-cta">Fale Conosco</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#home" class="mobile-link">Início</a>
+  <a href="#sobre" class="mobile-link">Sobre</a>
+  <a href="#psicologia" class="mobile-link">Psicologia</a>
+  <a href="#comportamento" class="mobile-link">Comportamento</a>
+  <a href="#neurociencia" class="mobile-link">Neurociência</a>
+  <a href="#emocoes" class="mobile-link">Emoções</a>
+  <a href="#teste" class="mobile-link">Teste</a>
+  <a href="#quiz" class="mobile-link">Quiz</a>
+  <a href="#timeline" class="mobile-link">Linha do Tempo</a>
+  <a href="#psicologos" class="mobile-link">Psicólogos</a>
+  <a href="#artigos" class="mobile-link">Artigos</a>
+  <a href="#galeria" class="mobile-link">Galeria</a>
+  <a href="#faq" class="mobile-link">FAQ</a>
+  <a href="#contato" class="mobile-link">Contato</a>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-label">Divulgação científica acessível</div>
+      <h1 class="hero-title">
+        Explorando a <em>mente humana</em>,<br>compreendendo comportamentos
+      </h1>
+      <p class="hero-desc">
+        O MundBehavior Institute é uma plataforma educacional dedicada à Psicologia, Neurociência e ao Comportamento Humano — transformando temas complexos em conhecimento claro, inspirador e aplicável.
+      </p>
+      <div class="hero-actions">
+        <a href="#sobre" class="btn-primary">Conhecer o projeto</a>
+        <a href="#teste" class="btn-secondary">Fazer o teste de personalidade</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="80">0</span><span class="stat-num">+</span>
+          <span class="stat-label">Conteúdos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Grandes nomes</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">100</span><span class="stat-num">%</span>
+          <span class="stat-label">Gratuito</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/hero-mente.png" alt="Mente humana" loading="lazy"/>
+      </div>
+      <div class="hero-pill hero-pill-1"><span class="pill-dot"></span>Neurociência</div>
+      <div class="hero-pill hero-pill-2"><span class="pill-dot"></span>Emoções</div>
+      <div class="hero-pill hero-pill-3"><span class="pill-dot"></span>Aprendizagem</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SOBRE ═══════ -->
+<section id="sobre" class="section">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-img-wrap fade-in">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/pesquisa-cientifica.png" alt="Pesquisa científica" loading="lazy"/>
+      </div>
+      <div class="fade-in">
+        <span class="section-label">Sobre o projeto</span>
+        <h2 class="section-title">O MundBehavior Institute</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          Uma iniciativa educacional criada para explorar os fascinantes campos da Psicologia, Neurociência e Comportamento Humano, reunindo informações confiáveis sobre emoções, personalidade, memória, aprendizagem e o funcionamento do cérebro.
+        </p>
+        <div class="sobre-pillars">
+          <div class="pillar">
+            <h4>Missão</h4>
+            <p>Tornar o conhecimento científico sobre a mente humana acessível, claro e aplicável ao dia a dia.</p>
+          </div>
+          <div class="pillar">
+            <h4>Visão</h4>
+            <p>Ser referência educacional na divulgação de Psicologia e Neurociência em língua portuguesa.</p>
+          </div>
+          <div class="pillar">
+            <h4>Valores</h4>
+            <p>Rigor científico, pensamento crítico, empatia, inclusão e incentivo ao autoconhecimento.</p>
+          </div>
+          <div class="pillar">
+            <h4>Objetivos</h4>
+            <p>Transformar temas complexos em conteúdos fáceis de entender e aplicar no cotidiano.</p>
+          </div>
+        </div>
+        <ul class="obj-list">
+          <li class="obj-item">Divulgar conhecimentos de Psicologia e Neurociência.</li>
+          <li class="obj-item">Estimular o pensamento crítico e científico.</li>
+          <li class="obj-item">Apresentar pesquisas e descobertas relevantes.</li>
+          <li class="obj-item">Promover a compreensão das emoções e da personalidade.</li>
+          <li class="obj-item">Incentivar a aprendizagem contínua e o autoconhecimento.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PSICOLOGIA ═══════ -->
+<section id="psicologia" class="section">
+  <div class="container">
+    <div class="psico-grid">
+      <div class="fade-in">
+        <span class="section-label">Psicologia</span>
+        <h2 class="section-title">A ciência que estuda a mente e o comportamento</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          A Psicologia investiga os processos mentais, emoções e ações humanas. Ela nos ajuda a compreender por que pensamos, sentimos e agimos de determinada forma.
+        </p>
+        <div class="psico-branches">
+          <div class="branch-card">
+            <h4>Psicologia Clínica</h4>
+            <p>Avaliação e tratamento de transtornos mentais e promoção do bem-estar emocional.</p>
+          </div>
+          <div class="branch-card">
+            <h4>Psicologia Educacional</h4>
+            <p>Estuda os processos de aprendizagem e o desenvolvimento no ambiente escolar.</p>
+          </div>
+          <div class="branch-card">
+            <h4>Psicologia Organizacional</h4>
+            <p>Analisa o comportamento humano no trabalho e nas relações profissionais.</p>
+          </div>
+          <div class="branch-card">
+            <h4>Psicologia Social</h4>
+            <p>Investiga como pensamentos e ações são influenciados pela presença dos outros.</p>
+          </div>
+          <div class="branch-card">
+            <h4>Psicologia do Desenvolvimento</h4>
+            <p>Acompanha as transformações mentais ao longo de todas as fases da vida.</p>
+          </div>
+          <div class="branch-card">
+            <h4>Psicologia Jurídica</h4>
+            <p>Aplica o conhecimento psicológico ao contexto do direito e da justiça.</p>
+          </div>
+        </div>
+      </div>
+      <div class="psico-img fade-in">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/pesquisa-cientifica.png" alt="Psicologia" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ COMPORTAMENTO ═══════ -->
+<section id="comportamento" class="section">
+  <div class="container">
+    <div class="comport-layout">
+      <div class="comport-img fade-in">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/comportamento-humano.png" alt="Comportamento humano" loading="lazy"/>
+      </div>
+      <div class="fade-in">
+        <span class="section-label">Comportamento humano</span>
+        <h2 class="section-title">Por que agimos como agimos?</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          O comportamento humano é resultado da interação entre biologia, mente e ambiente. Entender seus mecanismos nos ajuda a tomar decisões melhores e conviver com mais empatia.
+        </p>
+        <div class="comport-items">
+          <div class="comport-item">
+            <div class="comport-icon">🧠</div>
+            <div>
+              <h4>Tomada de decisões</h4>
+              <p>Combinamos razão e emoção para escolher. Vieses cognitivos influenciam mais do que imaginamos.</p>
+            </div>
+          </div>
+          <div class="comport-item">
+            <div class="comport-icon">🔄</div>
+            <div>
+              <h4>Hábitos</h4>
+              <p>Comportamentos repetidos viram automáticos pelo ciclo gatilho, rotina e recompensa.</p>
+            </div>
+          </div>
+          <div class="comport-item">
+            <div class="comport-icon">🎯</div>
+            <div>
+              <h4>Motivação</h4>
+              <p>Impulsos internos e externos movem nossas ações e objetivos cotidianos.</p>
+            </div>
+          </div>
+          <div class="comport-item">
+            <div class="comport-icon">👥</div>
+            <div>
+              <h4>Influência social</h4>
+              <p>O grupo molda atitudes, normas e decisões — às vezes sem que percebamos.</p>
+            </div>
+          </div>
+          <div class="comport-item">
+            <div class="comport-icon">💬</div>
+            <div>
+              <h4>Comunicação</h4>
+              <p>Linguagem verbal e não verbal constroem vínculos e dão sentido às relações.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ NEUROCIÊNCIA ═══════ -->
+<section id="neurociencia" class="section">
+  <div class="container">
+    <div class="neuro-header">
+      <div class="fade-in">
+        <span class="section-label">Neurociência</span>
+        <h2 class="section-title">O cérebro: o órgão mais complexo que conhecemos</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          A Neurociência estuda o sistema nervoso e como ele dá origem a pensamentos, emoções, memória e aprendizagem. Cada experiência molda fisicamente o nosso cérebro.
+        </p>
+        <div class="neuro-stats">
+          <div class="neuro-stat">
+            <div class="neuro-stat-val" data-target="86">0</div>
+            <div class="neuro-stat-desc"><strong>bilhões</strong> de neurônios no cérebro humano</div>
+          </div>
+          <div class="neuro-stat">
+            <div class="neuro-stat-val" data-target="100">0</div>
+            <div class="neuro-stat-desc"><strong>trilhões</strong> de conexões sinápticas</div>
+          </div>
+          <div class="neuro-stat">
+            <div class="neuro-stat-val">20%</div>
+            <div class="neuro-stat-desc">da energia do corpo consumida pelo cérebro</div>
+          </div>
+        </div>
+      </div>
+      <div class="neuro-img fade-in">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/cerebro-neuronios.png" alt="Neurônios" loading="lazy"/>
+      </div>
+    </div>
+    <div class="neuro-topics fade-in">
+      <div class="neuro-card">
+        <div class="neuro-card-icon">⚡</div>
+        <h4>Neurônios</h4>
+        <p>Células que transmitem informações por impulsos elétricos e químicos em milissegundos.</p>
+      </div>
+      <div class="neuro-card">
+        <div class="neuro-card-icon">💾</div>
+        <h4>Memória</h4>
+        <p>Capacidade de codificar, armazenar e recuperar informações e experiências vividas.</p>
+      </div>
+      <div class="neuro-card">
+        <div class="neuro-card-icon">📚</div>
+        <h4>Aprendizagem</h4>
+        <p>Processo de criar e fortalecer conexões neurais a partir de novas experiências.</p>
+      </div>
+      <div class="neuro-card">
+        <div class="neuro-card-icon">🔀</div>
+        <h4>Plasticidade</h4>
+        <p>O cérebro se reorganiza ao longo da vida, formando novas conexões e adaptando-se.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ EMOÇÕES ═══════ -->
+<section id="emocoes" class="section">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:700px;margin:0 auto 48px;">
+      <span class="section-label">Emoções humanas</span>
+      <h2 class="section-title">As emoções que guiam a nossa vida</h2>
+      <div class="divider" style="margin:20px auto 0;"></div>
+      <p class="section-desc" style="margin:20px auto 0;">
+        As emoções são respostas naturais que influenciam decisões, relações e bem-estar. Conhecê-las é o primeiro passo para a regulação emocional e o autoconhecimento.
+      </p>
+    </div>
+    <div class="emocoes-grid fade-in">
+      <div class="emocao-card" style="--emocao-color:#f59e0b;">
+        <span class="emocao-emoji">😊</span>
+        <h4>Alegria</h4>
+        <p>Sensação de bem-estar e satisfação que fortalece vínculos e a motivação.</p>
+      </div>
+      <div class="emocao-card" style="--emocao-color:#60a5fa;">
+        <span class="emocao-emoji">😢</span>
+        <h4>Tristeza</h4>
+        <p>Resposta a perdas e frustrações; ajuda na introspecção e na busca por apoio.</p>
+      </div>
+      <div class="emocao-card" style="--emocao-color:#f87171;">
+        <span class="emocao-emoji">😨</span>
+        <h4>Medo</h4>
+        <p>Emoção protetora que nos prepara para reagir diante de ameaças e perigos.</p>
+      </div>
+      <div class="emocao-card" style="--emocao-color:#fb923c;">
+        <span class="emocao-emoji">😡</span>
+        <h4>Raiva</h4>
+        <p>Surge diante de injustiças e limites; sinaliza a necessidade de mudança.</p>
+      </div>
+      <div class="emocao-card" style="--emocao-color:#a78bfa;">
+        <span class="emocao-emoji">😲</span>
+        <h4>Surpresa</h4>
+        <p>Reação rápida ao inesperado que foca a atenção em algo novo.</p>
+      </div>
+      <div class="emocao-card" style="--emocao-color:#4ade80;">
+        <span class="emocao-emoji">🤢</span>
+        <h4>Nojo</h4>
+        <p>Aversão que nos afasta de algo potencialmente nocivo ou desagradável.</p>
+      </div>
+    </div>
+    <div class="emocoes-regulacao fade-in">
+      <div class="regulacao-icon">🧘</div>
+      <div>
+        <h3 class="regulacao-title">Regulação emocional</h3>
+        <p class="regulacao-text">Regular emoções não significa reprimi-las, mas reconhecê-las, compreendê-las e responder a elas de forma saudável. Técnicas como respiração consciente, nomeação das emoções e reavaliação cognitiva ajudam a manter o equilíbrio diante dos desafios da vida cotidiana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ TESTE ═══════ -->
+<section id="teste" class="section">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto 0;">
+      <span class="section-label">Teste de personalidade</span>
+      <h2 class="section-title">Descubra o seu perfil</h2>
+      <div class="divider" style="margin:20px auto 20px;"></div>
+      <p class="section-desc" style="margin:0 auto;">
+        Responda algumas perguntas rápidas e receba um perfil baseado nas suas preferências. É uma experiência educativa e divertida de autoconhecimento.
+      </p>
+    </div>
+    <div class="teste-wrap fade-in" id="testeWrap">
+      <div class="teste-progress-bar">
+        <div class="teste-progress-fill" id="progressFill" style="width:20%;"></div>
+      </div>
+      <div class="teste-header">
+        <span class="teste-step" id="testeStep">Pergunta 1 de 5</span>
+        <span style="font-size:.8rem;color:var(--muted);">Autoconhecimento</span>
+      </div>
+      <div class="teste-body" id="testeBody">
+        <p class="teste-q" id="testeQ">Em um projeto novo, o que mais te motiva?</p>
+        <div class="teste-options" id="testeOptions"></div>
+      </div>
+      <div class="teste-footer" id="testeFooter">
+        <button class="btn-primary" id="testeNext" disabled>Próxima →</button>
+      </div>
+      <div class="teste-result" id="testeResult">
+        <div class="result-emoji" id="resultEmoji"></div>
+        <div class="result-title" id="resultTitle"></div>
+        <div class="result-desc" id="resultDesc"></div>
+        <button class="btn-secondary" id="testeReset">Refazer o teste</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ QUIZ ═══════ -->
+<section id="quiz" class="section">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto 0;">
+      <span class="section-label">Quiz interativo</span>
+      <h2 class="section-title">Teste seus conhecimentos</h2>
+      <div class="divider" style="margin:20px auto 20px;"></div>
+      <p class="section-desc" style="margin:0 auto;">
+        10 perguntas sobre Psicologia e Neurociência com correção automática e explicações.
+      </p>
+    </div>
+    <div class="quiz-wrap fade-in">
+      <div class="quiz-meta">
+        <span class="quiz-meta-label">Questão <span id="qNum">1</span>/10</span>
+        <span class="quiz-meta-val">Acertos: <span id="qScore">0</span></span>
+      </div>
+      <div class="quiz-card" id="quizCard">
+        <p class="quiz-q" id="quizQ"></p>
+        <div class="quiz-options" id="quizOpts"></div>
+        <div class="quiz-explanation" id="quizExp"></div>
+        <div class="quiz-nav">
+          <button class="btn-primary" id="quizNext" style="display:none;">Próxima →</button>
+        </div>
+      </div>
+      <div class="quiz-final" id="quizFinal">
+        <div class="result-emoji">🏆</div>
+        <div class="quiz-score" id="finalScore">0/10</div>
+        <p style="color:var(--muted);margin:16px 0 28px;line-height:1.75;" id="finalMsg"></p>
+        <button class="btn-primary" id="quizReset">Tentar novamente</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ TIMELINE ═══════ -->
+<section id="timeline" class="section">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Linha do tempo</span>
+      <h2 class="section-title">A história da Psicologia</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Das primeiras experiências em laboratório à neurociência moderna, conheça os marcos que moldaram a ciência da mente.</p>
+    </div>
+    <div class="timeline-list fade-in">
+      <div class="tl-item">
+        <span class="tl-year">1879</span>
+        <h3 class="tl-title">Nasce a Psicologia científica</h3>
+        <p class="tl-desc">Wilhelm Wundt funda o primeiro laboratório de Psicologia experimental, em Leipzig.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1900</span>
+        <h3 class="tl-title">A interpretação dos sonhos</h3>
+        <p class="tl-desc">Sigmund Freud publica a obra que lança as bases da Psicanálise e do estudo do inconsciente.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1913</span>
+        <h3 class="tl-title">Surge o Behaviorismo</h3>
+        <p class="tl-desc">John B. Watson defende o estudo do comportamento observável como objeto da Psicologia.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1936</span>
+        <h3 class="tl-title">Desenvolvimento cognitivo</h3>
+        <p class="tl-desc">Jean Piaget descreve as etapas do desenvolvimento da inteligência infantil.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1943</span>
+        <h3 class="tl-title">Hierarquia das necessidades</h3>
+        <p class="tl-desc">Abraham Maslow apresenta sua teoria da motivação humana, a famosa pirâmide.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">Anos 1950</span>
+        <h3 class="tl-title">Psicologia humanista</h3>
+        <p class="tl-desc">Carl Rogers e outros valorizam a experiência subjetiva e o potencial humano.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">Anos 1960</span>
+        <h3 class="tl-title">Revolução cognitiva</h3>
+        <p class="tl-desc">A mente volta ao centro dos estudos, integrando linguagem, memória e percepção.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">Hoje</span>
+        <h3 class="tl-title">Neurociência integrada</h3>
+        <p class="tl-desc">Tecnologia e ciência se unem para mapear o cérebro e o comportamento humano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PSICÓLOGOS ═══════ -->
+<section id="psicologos" class="section">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto;">
+      <span class="section-label">Grandes psicólogos</span>
+      <h2 class="section-title">Mentes que transformaram a ciência</h2>
+      <div class="divider" style="margin:20px auto;"></div>
+    </div>
+    <div class="psico-cards fade-in">
+      <div class="psico-card">
+        <div class="psico-avatar">SF</div>
+        <div class="psico-name">Sigmund Freud</div>
+        <div class="psico-years">1856 – 1939</div>
+        <div class="psico-role">Pai da Psicanálise</div>
+        <p class="psico-bio">Explorou o inconsciente, os sonhos e os mecanismos de defesa, revolucionando o entendimento da mente.</p>
+      </div>
+      <div class="psico-card">
+        <div class="psico-avatar" style="background:linear-gradient(135deg,#9c6b24,#c49c41);">CJ</div>
+        <div class="psico-name">Carl Jung</div>
+        <div class="psico-years">1875 – 1961</div>
+        <div class="psico-role">Psicologia Analítica</div>
+        <p class="psico-bio">Criou conceitos como inconsciente coletivo, arquétipos e os tipos psicológicos que influenciam até hoje.</p>
+      </div>
+      <div class="psico-card">
+        <div class="psico-avatar" style="background:linear-gradient(135deg,#6b4c9c,#9c6b24);">BS</div>
+        <div class="psico-name">B. F. Skinner</div>
+        <div class="psico-years">1904 – 1990</div>
+        <div class="psico-role">Behaviorismo Radical</div>
+        <p class="psico-bio">Desenvolveu o condicionamento operante, mostrando como reforços moldam o comportamento humano.</p>
+      </div>
+      <div class="psico-card">
+        <div class="psico-avatar" style="background:linear-gradient(135deg,#2a6b4c,#4c9c6b);">JP</div>
+        <div class="psico-name">Jean Piaget</div>
+        <div class="psico-years">1896 – 1980</div>
+        <div class="psico-role">Desenvolvimento Cognitivo</div>
+        <p class="psico-bio">Descreveu como as crianças constroem o conhecimento em estágios ao longo do crescimento.</p>
+      </div>
+      <div class="psico-card">
+        <div class="psico-avatar" style="background:linear-gradient(135deg,#9c4c24,#e07b3c);">AM</div>
+        <div class="psico-name">Abraham Maslow</div>
+        <div class="psico-years">1908 – 1970</div>
+        <div class="psico-role">Psicologia Humanista</div>
+        <p class="psico-bio">Propôs a hierarquia das necessidades e o conceito de autorrealização humana.</p>
+      </div>
+      <div class="psico-card">
+        <div class="psico-avatar" style="background:linear-gradient(135deg,#1e4a8c,#4a7ec4);">CR</div>
+        <div class="psico-name">Carl Rogers</div>
+        <div class="psico-years">1902 – 1987</div>
+        <div class="psico-role">Abordagem Centrada na Pessoa</div>
+        <p class="psico-bio">Valorizou a empatia e a aceitação incondicional como base da terapia humanista.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ARTIGOS ═══════ -->
+<section id="artigos" class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Artigos e pesquisas</span>
+      <h2 class="section-title">Aprofunde seu conhecimento</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="artigos-filters fade-in">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="psicologia">Psicologia</button>
+      <button class="filter-btn" data-filter="neurociencia">Neurociência</button>
+      <button class="filter-btn" data-filter="comportamento">Comportamento</button>
+      <button class="filter-btn" data-filter="emocoes">Emoções</button>
+    </div>
+    <div class="artigos-grid fade-in" id="artigosGrid">
+      <div class="artigo-card" data-cat="neurociencia">
+        <div class="artigo-body">
+          <span class="artigo-tag" style="background:rgba(96,165,250,.12);color:#60a5fa;">Neurociência</span>
+          <h3 class="artigo-title">Como a memória constrói a nossa identidade</h3>
+          <p class="artigo-desc">Entenda o papel do hipocampo e por que lembrar é, na verdade, reconstruir o passado.</p>
+          <div class="artigo-meta">6 min de leitura</div>
+        </div>
+      </div>
+      <div class="artigo-card" data-cat="comportamento">
+        <div class="artigo-body">
+          <span class="artigo-tag" style="background:rgba(74,222,128,.1);color:#4ade80;">Comportamento</span>
+          <h3 class="artigo-title">O poder dos pequenos hábitos</h3>
+          <p class="artigo-desc">Mudanças mínimas e consistentes podem transformar a sua rotina e os seus resultados.</p>
+          <div class="artigo-meta">5 min de leitura</div>
+        </div>
+      </div>
+      <div class="artigo-card" data-cat="emocoes">
+        <div class="artigo-body">
+          <span class="artigo-tag" style="background:rgba(251,146,60,.1);color:#fb923c;">Emoções</span>
+          <h3 class="artigo-title">Inteligência emocional no dia a dia</h3>
+          <p class="artigo-desc">Reconhecer e nomear emoções é o primeiro passo para tomar decisões mais equilibradas.</p>
+          <div class="artigo-meta">7 min de leitura</div>
+        </div>
+      </div>
+      <div class="artigo-card" data-cat="psicologia">
+        <div class="artigo-body">
+          <span class="artigo-tag" style="background:rgba(196,156,65,.12);color:var(--gold);">Psicologia</span>
+          <h3 class="artigo-title">O que é a Psicologia Positiva?</h3>
+          <p class="artigo-desc">Uma abordagem que estuda o que faz a vida valer a pena e como cultivar o bem-estar.</p>
+          <div class="artigo-meta">4 min de leitura</div>
+        </div>
+      </div>
+      <div class="artigo-card" data-cat="neurociencia">
+        <div class="artigo-body">
+          <span class="artigo-tag" style="background:rgba(96,165,250,.12);color:#60a5fa;">Neurociência</span>
+          <h3 class="artigo-title">Neuroplasticidade: o cérebro que se reinventa</h3>
+          <p class="artigo-desc">Como o cérebro forma novas conexões e por que nunca é tarde para aprender.</p>
+          <div class="artigo-meta">6 min de leitura</div>
+        </div>
+      </div>
+      <div class="artigo-card" data-cat="comportamento">
+        <div class="artigo-body">
+          <span class="artigo-tag" style="background:rgba(74,222,128,.1);color:#4ade80;">Comportamento</span>
+          <h3 class="artigo-title">Vieses cognitivos e as armadilhas da mente</h3>
+          <p class="artigo-desc">Descubra os atalhos mentais que distorcem nossos julgamentos sem percebermos.</p>
+          <div class="artigo-meta">8 min de leitura</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CURIOSIDADES ═══════ -->
+<div class="curiosidades">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto;">
+      <span class="section-label">Curiosidades</span>
+      <h2 class="section-title">Fatos fascinantes sobre a mente</h2>
+      <div class="divider" style="margin:20px auto;"></div>
+    </div>
+    <div class="curio-grid fade-in">
+      <div class="curio-card" data-num="1"><p class="curio-text">O cérebro humano consome cerca de 20% de toda a energia do corpo, mesmo representando só 2% do peso.</p></div>
+      <div class="curio-card" data-num="2"><p class="curio-text">Não usamos apenas 10% do cérebro — esse é um dos mitos mais populares da neurociência.</p></div>
+      <div class="curio-card" data-num="3"><p class="curio-text">As emoções influenciam diretamente a forma como memórias são gravadas e relembradas pelo cérebro.</p></div>
+      <div class="curio-card" data-num="4"><p class="curio-text">Sorrir, mesmo de forma forçada, pode melhorar o humor por causa do feedback facial muscular.</p></div>
+      <div class="curio-card" data-num="5"><p class="curio-text">O cérebro continua criando novos neurônios na vida adulta, processo chamado neurogênese.</p></div>
+      <div class="curio-card" data-num="6"><p class="curio-text">Decisões aparentemente racionais são fortemente influenciadas por emoções e intuições inconscientes.</p></div>
+      <div class="curio-card" data-num="7"><p class="curio-text">A dopamina está mais ligada à antecipação da recompensa do que à recompensa em si.</p></div>
+      <div class="curio-card" data-num="8"><p class="curio-text">O contato visual ativa áreas cerebrais ligadas à empatia e à conexão social entre pessoas.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ GALERIA ═══════ -->
+<section id="galeria" class="section">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Galeria científica</span>
+      <h2 class="section-title">Imagens da mente e da ciência</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Uma seleção visual sobre cérebro, emoções, pesquisa e comportamento humano. Clique para ampliar.</p>
+    </div>
+    <div class="galeria-grid fade-in" id="galeriaGrid">
+      <div class="galeria-item" data-src="https://website-mundbehavior-institute.vercel.app/images/cerebro-neuronios.png">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/cerebro-neuronios.png" alt="Cérebro e neurônios" loading="lazy"/>
+        <div class="galeria-overlay"><span class="galeria-caption">O cérebro humano e suas conexões</span></div>
+      </div>
+      <div class="galeria-item" data-src="https://website-mundbehavior-institute.vercel.app/images/emocoes.png">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/emocoes.png" alt="Emoções" loading="lazy"/>
+        <div class="galeria-overlay"><span class="galeria-caption">O espectro das emoções</span></div>
+      </div>
+      <div class="galeria-item" data-src="https://website-mundbehavior-institute.vercel.app/images/pesquisa-cientifica.png">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/pesquisa-cientifica.png" alt="Pesquisa" loading="lazy"/>
+        <div class="galeria-overlay"><span class="galeria-caption">Pesquisa científica em ação</span></div>
+      </div>
+      <div class="galeria-item" data-src="https://website-mundbehavior-institute.vercel.app/images/comportamento-humano.png">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/comportamento-humano.png" alt="Comportamento" loading="lazy"/>
+        <div class="galeria-overlay"><span class="galeria-caption">Comportamento e relações humanas</span></div>
+      </div>
+      <div class="galeria-item" data-src="https://website-mundbehavior-institute.vercel.app/images/hero-mente.png">
+        <img src="https://website-mundbehavior-institute.vercel.app/images/hero-mente.png" alt="Mente" loading="lazy"/>
+        <div class="galeria-overlay"><span class="galeria-caption">A mente em equilíbrio</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <img src="" alt="" id="lightboxImg"/>
+</div>
+
+<!-- ═══════ FAQ ═══════ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Perguntas frequentes</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-q">O MundBehavior Institute é gratuito?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Sim, 100%! Todo o conteúdo do MundBehavior Institute é gratuito e acessível a qualquer pessoa com acesso à internet. Nossa missão é democratizar o conhecimento científico.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O conteúdo substitui acompanhamento profissional?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Não. O conteúdo do MundBehavior Institute tem finalidade exclusivamente educacional e informativa. Ele não substitui a avaliação, diagnóstico ou tratamento por profissionais de saúde mental.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Para quem o site é indicado?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Para estudantes, curiosos, educadores e qualquer pessoa interessada em entender melhor a mente humana, as emoções e o comportamento. Nenhum conhecimento prévio é necessário.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O teste de personalidade é cientificamente validado?<span class="faq-icon">+</span></button>
+        <div class="faq-a">O teste é uma ferramenta educativa e de entretenimento, criada para estimular o autoconhecimento. Não é um instrumento diagnóstico validado cientificamente.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso usar os conteúdos em trabalhos escolares?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Sim, desde que você cite a fonte corretamente. Recomendamos sempre complementar com referências acadêmicas primárias para trabalhos científicos.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Como recebo novidades do projeto?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Inscreva-se na nossa newsletter no rodapé da página e siga nossas redes sociais. Você receberá novos conteúdos diretamente no seu e-mail.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTATO ═══════ -->
+<section id="contato" class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="contato-grid">
+      <div class="fade-in">
+        <span class="section-label">Contato</span>
+        <h2 class="section-title">Fale com o instituto</h2>
+        <div class="divider"></div>
+        <p class="section-desc" style="margin-bottom:32px;">
+          Tem dúvidas, sugestões ou quer colaborar? Envie a sua mensagem — teremos prazer em responder.
+        </p>
+        <div class="contato-form">
+          <div class="form-group">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-input" placeholder="Seu nome completo" id="fNome"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-input" placeholder="seu@email.com" id="fEmail"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-textarea" placeholder="Escreva sua mensagem..." id="fMsg"></textarea>
+          </div>
+          <button class="btn-primary" id="formSend" style="align-self:flex-start;">Enviar mensagem</button>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="contato-info">
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <div class="info-label">E-mail</div>
+              <div class="info-val">contato@mundbehavior.edu</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div>
+              <div class="info-label">Atendimento</div>
+              <div class="info-val">Seg. a sex., 9h às 18h</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-label">Localização</div>
+              <div class="info-val">Projeto educacional digital — Brasil</div>
+            </div>
+          </div>
+        </div>
+        <div class="contato-map">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-46.65%2C-23.57%2C-46.60%2C-23.53&layer=mapnik" loading="lazy" title="Mapa"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ NEWSLETTER ═══════ -->
+<div class="newsletter">
+  <div class="container">
+    <span class="section-label">Newsletter</span>
+    <h2 class="section-title">Receba nossas novidades</h2>
+    <p style="color:var(--muted);margin-top:12px;">Inscreva-se e receba novos conteúdos sobre a mente humana diretamente no seu e-mail.</p>
+    <div class="newsletter-form">
+      <input type="email" class="nl-input" placeholder="Seu e-mail" id="nlEmail"/>
+      <button class="btn-primary" id="nlBtn">Inscrever-se</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Mund<span>Behavior</span></div>
+        <p class="footer-tagline">"Explorando a mente humana, compreendendo comportamentos, transformando perspectivas."</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="Instagram">📸</a>
+          <a href="#" class="social-btn" title="YouTube">▶️</a>
+          <a href="#" class="social-btn" title="LinkedIn">💼</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <ul class="footer-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#psicologia">Psicologia</a></li>
+          <li><a href="#comportamento">Comportamento</a></li>
+          <li><a href="#neurociencia">Neurociência</a></li>
+          <li><a href="#emocoes">Emoções</a></li>
+          <li><a href="#teste">Teste</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Explorar</div>
+        <ul class="footer-links">
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#timeline">Linha do Tempo</a></li>
+          <li><a href="#psicologos">Psicólogos</a></li>
+          <li><a href="#artigos">Artigos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MundBehavior Institute. Projeto educacional.</span>
+      <span>Desenvolvida por <span class="footer-dev">Mel Louise</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- ═══════════════════════════════════════════
+   JAVASCRIPT
+═══════════════════════════════════════════ -->
+<script src="script.js"></script>
+</body>
+</html>
